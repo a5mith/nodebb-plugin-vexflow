@@ -6,7 +6,7 @@
 
 
     vexflow.parse = function(postContent, callback) {
-        postContent = postContent.replace(/<a href="(?:my?:\/\/)?(?:vexflow\.com)\/?(.+)">.+<\/a>/g, embed);
+        postContent = postContent.replace(/<a href="(?:http?:\/\/)?(?:my\.vexflow\.com)\/?(.+)">.+<\/a>/g, embed);
         callback(null, postContent);
     };
 
